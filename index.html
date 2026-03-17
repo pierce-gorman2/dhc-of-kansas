@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Parisienne&family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Rye&family=Cormorant+Garamond:wght@500;600;700&family=Bodoni+Moda:opsz,wght@6..96,600;6..96,700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -27,6 +27,7 @@
         <a href="news.html">News</a>
         <a href="locations.html">Locations</a>
         <a href="about.html">About Us</a>
+        <a href="partner.html">Partner With Us</a>
         <a href="https://restaurantexcellence.com" target="_blank" rel="noreferrer">Podcast</a>
       </nav>
 
@@ -42,22 +43,26 @@
       <a href="news.html">News</a>
       <a href="locations.html">Locations</a>
       <a href="about.html">About Us</a>
+      <a href="partner.html">Partner With Us</a>
       <a href="https://restaurantexcellence.com" target="_blank" rel="noreferrer">Podcast</a>
     </div>
   </header>
 
   <main>
     <section class="hero hero-fullscreen hero-contrast">
+      <div
+        class="hero-backdrop"
+        data-hero-slideshow
+        data-images="pic-1.png,pic-2.webp,pic-3.jpg,pic-4.png,pic-5.png,pic-6.png,pic-8.png,pic-9.png"
+        aria-hidden="true">
+        <div class="hero-slide hero-slide-primary is-active"></div>
+        <div class="hero-slide hero-slide-secondary"></div>
+      </div>
       <div class="container hero-center">
         <div class="hero-script-stage" aria-label="Kansas-based hospitality">
           <svg class="hero-script-svg" viewBox="0 0 1400 260" role="img" aria-hidden="true">
             <text x="50%" y="56%" text-anchor="middle" dominant-baseline="middle">Kansas-based hospitality</text>
           </svg>
-        </div>
-        <p class="hero-kicker">A Dave's Hot Chicken franchise company operating in Wichita, Manhattan, Lawrence, and Topeka</p>
-        <div class="hero-city-links">
-          <a href="locations.html">Our Locations</a>
-          <a href="about.html">About Us</a>
         </div>
       </div>
     </section>
@@ -72,31 +77,81 @@
     <section class="section section-soft">
       <div class="container">
         <div class="section-heading narrow-copy">
-          <p class="section-tag">Featured Media</p>
+          <p class="section-tag">About Dave's Hot Chicken</p>
         </div>
 
-        <div class="home-news-grid">
-          <a
-            href="https://www.nrn.com/fast-casual/dave-s-hot-chicken-s-growth-is-full-speed-ahead-under-new-ceo-jim-bitticks"
-            class="page-card featured-media-card featured-article-card reveal"
-            target="_blank"
-            rel="noreferrer">
-            <span class="chip">Article</span>
-            <h3>Dave's Hot Chicken's Growth Is Full Speed Ahead Under New CEO Jim Bitticks</h3>
-            <p>Read the Nation's Restaurant News feature covering Dave's Hot Chicken's growth and leadership momentum.</p>
-            <span class="feature-link-card-cta">Read article</span>
-          </a>
+        <div class="about-daves-grid reveal">
+          <div class="page-card about-daves-copy">
+            <p>Dave's Hot Chicken started in 2017 when three childhood friends pooled $900 to open a pop-up in an East Hollywood parking lot. All they had was a portable fryer, folding tables, and a simple menu.</p>
+            <p>The concept gained traction quickly through Instagram, word-of-mouth, and a strong review from <a href="https://la.eater.com/2017/5/11/15624928/daves-hot-chicken-stand-east-hollywood-feature" target="_blank" rel="noreferrer">EATER LA</a>. Before long, lines were forming around the block, leading them to open their first brick-and-mortar location in 2018.</p>
+            <p>Since then, the focus has remained the same: serve high-quality hot chicken with consistent flavor and execution that keeps people coming back. From that first location to now 400+ locations, the mission has stayed consistent - to blow every guest's mind with the best hot chicken in the world.</p>
+          </div>
 
-          <a
-            href="https://www.fastcasual.com/articles/daves-hot-chicken-named-fast-casuals-2025-top-brand/"
-            class="page-card featured-media-card featured-article-card reveal"
-            target="_blank"
-            rel="noreferrer">
-            <span class="chip">Article</span>
-            <h3>Dave's Hot Chicken Named Fast Casual's 2025 Top Brand</h3>
-            <p>Read the Fast Casual feature highlighting Dave's Hot Chicken as Fast Casual's 2025 Top Brand.</p>
-            <span class="feature-link-card-cta">Read article</span>
-          </a>
+          <div class="page-card about-daves-image-card">
+            <img src="pic-4.png" alt="Dave's Hot Chicken meal spread" class="about-daves-image" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section partner-section">
+      <div class="container">
+        <div class="section-heading narrow-copy">
+          <p class="section-tag">Partner With Us</p>
+          <p class="lede-copy">We are always looking for meaningful ways to connect with schools, organizations, and community partners across Kansas.</p>
+        </div>
+
+        <div class="page-card partner-form-card reveal">
+          <form class="partner-form" data-partner-form>
+            <div class="partner-form-grid">
+              <label class="partner-field">
+                <span>Name</span>
+                <input type="text" name="name" autocomplete="name" required />
+              </label>
+
+              <label class="partner-field">
+                <span>Organization</span>
+                <input type="text" name="organization" autocomplete="organization" required />
+              </label>
+
+              <label class="partner-field">
+                <span>Email</span>
+                <input type="email" name="email" autocomplete="email" required />
+              </label>
+
+              <label class="partner-field">
+                <span>Phone</span>
+                <input type="tel" name="phone" autocomplete="tel" />
+              </label>
+
+              <label class="partner-field">
+                <span>City</span>
+                <input type="text" name="city" autocomplete="address-level2" />
+              </label>
+
+              <label class="partner-field">
+                <span>Partnership Type</span>
+                <select name="partnership_type" required>
+                  <option value="">Select one</option>
+                  <option value="School Fundraiser">School Fundraiser</option>
+                  <option value="Community Partnership">Community Partnership</option>
+                  <option value="Event Collaboration">Event Collaboration</option>
+                  <option value="Media Inquiry">Media Inquiry</option>
+                  <option value="Other">Other</option>
+                </select>
+              </label>
+            </div>
+
+            <label class="partner-field partner-field-full">
+              <span>How would you like to partner with us?</span>
+              <textarea name="details" rows="6" required></textarea>
+            </label>
+
+            <div class="partner-form-actions">
+              <button type="submit" class="city-link">Send Inquiry</button>
+              <p class="partner-form-note">Submitting will open a prefilled email addressed to `pierce@lcpsa.net`.</p>
+            </div>
+          </form>
         </div>
       </div>
     </section>
@@ -115,6 +170,7 @@
         <a href="news.html">News</a>
         <a href="locations.html">Locations</a>
         <a href="about.html">About Us</a>
+        <a href="partner.html">Partner With Us</a>
         <a href="https://restaurantexcellence.com" target="_blank" rel="noreferrer">Podcast</a>
       </div>
     </div>

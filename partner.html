@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Partner With Us | DHC Kansas</title>
+  <meta
+    name="description"
+    content="Partner with DHC of Kansas for schools, organizations, events, and community collaborations."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Rye&family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="brand brand-stack" aria-label="DHC of Kansas home">
+        <span class="brand-title">DHC of Kansas</span>
+        <span class="brand-script">Kansas-based hospitality</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary">
+        <a href="community.html">Community</a>
+        <a href="news.html">News</a>
+        <a href="locations.html">Locations</a>
+        <a href="about.html">About Us</a>
+        <a href="partner.html">Partner With Us</a>
+        <a href="https://restaurantexcellence.com" target="_blank" rel="noreferrer">Podcast</a>
+      </nav>
+
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <div id="mobileMenu" class="mobile-menu container">
+      <a href="community.html">Community</a>
+      <a href="news.html">News</a>
+      <a href="locations.html">Locations</a>
+      <a href="about.html">About Us</a>
+      <a href="partner.html">Partner With Us</a>
+      <a href="https://restaurantexcellence.com" target="_blank" rel="noreferrer">Podcast</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container narrow-copy">
+        <p class="section-tag">Partner With Us</p>
+        <h1 class="page-title">A place to connect with our team about schools, organizations, events, and community opportunities.</h1>
+      </div>
+    </section>
+
+    <section class="page-section partner-section">
+      <div class="container">
+        <div class="page-card partner-form-card reveal">
+          <form class="partner-form" data-partner-form>
+            <div class="partner-form-grid">
+              <label class="partner-field">
+                <span>Name</span>
+                <input type="text" name="name" autocomplete="name" required />
+              </label>
+
+              <label class="partner-field">
+                <span>Organization</span>
+                <input type="text" name="organization" autocomplete="organization" required />
+              </label>
+
+              <label class="partner-field">
+                <span>Email</span>
+                <input type="email" name="email" autocomplete="email" required />
+              </label>
+
+              <label class="partner-field">
+                <span>Phone</span>
+                <input type="tel" name="phone" autocomplete="tel" />
+              </label>
+
+              <label class="partner-field">
+                <span>City</span>
+                <input type="text" name="city" autocomplete="address-level2" />
+              </label>
+
+              <label class="partner-field">
+                <span>Partnership Type</span>
+                <select name="partnership_type" required>
+                  <option value="">Select one</option>
+                  <option value="School Fundraiser">School Fundraiser</option>
+                  <option value="Community Partnership">Community Partnership</option>
+                  <option value="Event Collaboration">Event Collaboration</option>
+                  <option value="Media Inquiry">Media Inquiry</option>
+                  <option value="Other">Other</option>
+                </select>
+              </label>
+            </div>
+
+            <label class="partner-field partner-field-full">
+              <span>How would you like to partner with us?</span>
+              <textarea name="details" rows="6" required></textarea>
+            </label>
+
+            <div class="partner-form-actions">
+              <button type="submit" class="city-link">Send Inquiry</button>
+              <p class="partner-form-note">Submitting will open a prefilled email addressed to `pierce@lcpsa.net`.</p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="index.html" class="brand brand-stack footer-brand" aria-label="DHC of Kansas home">
+          <span class="brand-title">DHC of Kansas</span>
+          <span class="brand-script">Kansas-based hospitality</span>
+        </a>
+      </div>
+      <div class="footer-links">
+        <a href="community.html">Community</a>
+        <a href="news.html">News</a>
+        <a href="locations.html">Locations</a>
+        <a href="about.html">About Us</a>
+        <a href="partner.html">Partner With Us</a>
+        <a href="https://restaurantexcellence.com" target="_blank" rel="noreferrer">Podcast</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
