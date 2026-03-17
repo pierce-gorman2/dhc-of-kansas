@@ -1160,6 +1160,10 @@ h3 {
     justify-content: flex-start;
   }
 
+  .hero-script-stage {
+    width: min(100%, 860px);
+  }
+
   .hero-script-svg text {
     font-size: 86px;
   }
@@ -1168,6 +1172,18 @@ h3 {
 @media (max-width: 640px) {
   .container {
     width: min(var(--max-width), calc(100% - 1.25rem));
+  }
+
+  .hero-fullscreen {
+    min-height: calc(100svh - 85px);
+  }
+
+  .hero-center {
+    padding: 0 0.2rem;
+  }
+
+  .hero-script-stage {
+    width: min(100%, 540px);
   }
 
   .brand-title {
@@ -1179,16 +1195,23 @@ h3 {
   }
 
   .hero-script-svg text {
-    font-size: 60px;
-  }
-
-  .hero-kicker {
-    margin-top: 0;
-    font-size: 1.05rem;
+    font-size: 46px;
+    stroke-width: 0.85;
   }
 
   .city-heading {
     align-items: start;
     flex-direction: column;
+  }
+}
+
+@media (max-width: 420px) {
+  .hero-script-stage {
+    width: min(100%, 390px);
+  }
+
+  .hero-script-svg text {
+    font-size: 38px;
+    stroke-width: 0.8;
   }
 }
